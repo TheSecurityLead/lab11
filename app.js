@@ -87,9 +87,9 @@ function loadProducts() {
       return newProduct;
     });
   } else {
-    initializeProducts(); // Function to create new instances of Product
+    initializeProducts(); // Call this if there's nothing in local storage
   }
-  renderProducts();
+  renderProducts(); // Call renderProducts after loading or initializing products
 }
 
 // Event listener for product section clicks
@@ -117,4 +117,4 @@ function initializeProducts() {
   Product.allProducts.push(new Product('Wine Glass', 'wine-glass.jpg'));
 }
 
-
+document.addEventListener('DOMContentLoaded', loadProducts);
