@@ -18,6 +18,12 @@ function getRandomProduct() {
   return Math.floor(Math.random() * Product.allProducts.length);
 }
 
+function showResults() {
+  
+  document.getElementById('results').hidden = false;
+
+  renderChart();
+}
 
 function renderProducts() {
   let displayedIndices = [];
