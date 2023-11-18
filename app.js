@@ -75,42 +75,42 @@ function showResults() {
 
 
 function initializeProducts() {
-  new Product('R2D2 Bag', 'img/bag.jpg');
-  new Product('Banana Slicer', 'img/banana.jpg');
-  new Product('Bathroom Stand', 'img/bathroom.jpg');
-  new Product('Yellow Boots', 'img/boots.jpg');
-  new Product('Breakfast Maker', 'img/breakfast.jpg');
-  new Product('Meatball Bubblegum', 'img/bubblegum.jpg');
-  new Product('Red Chair', 'img/chair.jpg');
-  new Product('Cthulhu Figure', 'img/cthulhu.jpg');
-  new Product('Dog Duck', 'img/dog-duck.jpg');
-  new Product('Dragon Meat', 'img/dragon.jpg');
-  new Product('Pen Cap Utensils', 'img/pen.jpg');
-  new Product('Pet Sweep', 'img/pet-sweep.jpg');
-  new Product('Pizza Scissors', 'img/scissors.jpg');
-  new Product('Shark Sleeping Bag', 'img/shark.jpg');
-  new Product('Baby Sweeper', 'img/sweep.png');
-  new Product('Unicorn Meat', 'img/unicorn.jpg');
-  new Product('Wine Glass', 'img/wine-glass.jpg');
+  new Product('R2D2 Bag', 'bag.jpg');
+  new Product('Banana Slicer', 'banana.jpg');
+  new Product('Bathroom Stand', 'bathroom.jpg');
+  new Product('Yellow Boots', 'boots.jpg');
+  new Product('Breakfast Maker', 'breakfast.jpg');
+  new Product('Meatball Bubblegum', 'bubblegum.jpg');
+  new Product('Red Chair', 'chair.jpg');
+  new Product('Cthulhu Figure', 'cthulhu.jpg');
+  new Product('Dog Duck', 'dog-duck.jpg');
+  new Product('Dragon Meat', 'dragon.jpg');
+  new Product('Pen Cap Utensils', 'pen.jpg');
+  new Product('Pet Sweep', 'pet-sweep.jpg');
+  new Product('Pizza Scissors', 'scissors.jpg');
+  new Product('Shark Sleeping Bag', 'shark.jpg');
+  new Product('Baby Sweeper', 'sweep.png');
+  new Product('Unicorn Meat', 'unicorn.jpg');
+  new Product('Wine Glass', 'wine-glass.jpg');
 
   Product.allProducts.push(
-    new Product('R2D2 Bag', 'img/bag.jpg'),
-    new Product('Banana Slicer', 'img/banana.jpg'),
-    new Product('Bathroom Stand', 'img/bathroom.jpg'),
-    new Product('Yellow Boots', 'img/boots.jpg'),
-    new Product('Breakfast Maker', 'img/breakfast.jpg'),
-    new Product('Meatball Bubblegum', 'img/bubblegum.jpg'),
-    new Product('Red Chair', 'img/chair.jpg'),
-    new Product('Cthulhu Figure', 'img/cthulhu.jpg'),
-    new Product('Dog Duck', 'img/dog-duck.jpg'),
-    new Product('Dragon Meat', 'img/dragon.jpg'),
-    new Product('Pen Cap Utensils', 'img/pen.jpg'),
-    new Product('Pet Sweep', 'img/pet-sweep.jpg'),
-    new Product('Pizza Scissors', 'img/scissors.jpg'),
-    new Product('Shark Sleeping Bag', 'img/shark.jpg'),
-    new Product('Baby Sweeper', 'img/sweep.png'),
-    new Product('Unicorn Meat', 'img/unicorn.jpg'),
-    new Product('Wine Glass', 'img/wine-glass.jpg')
+    new Product('R2D2 Bag', 'bag.jpg'),
+    new Product('Banana Slicer', 'banana.jpg'),
+    new Product('Bathroom Stand', 'bathroom.jpg'),
+    new Product('Yellow Boots', 'boots.jpg'),
+    new Product('Breakfast Maker', 'breakfast.jpg'),
+    new Product('Meatball Bubblegum', 'bubblegum.jpg'),
+    new Product('Red Chair', 'chair.jpg'),
+    new Product('Cthulhu Figure', 'cthulhu.jpg'),
+    new Product('Dog Duck', 'dog-duck.jpg'),
+    new Product('Dragon Meat', 'dragon.jpg'),
+    new Product('Pen Cap Utensils', 'pen.jpg'),
+    new Product('Pet Sweep', 'pet-sweep.jpg'),
+    new Product('Pizza Scissors', 'scissors.jpg'),
+    new Product('Shark Sleeping Bag', 'shark.jpg'),
+    new Product('Baby Sweeper', 'sweep.png'),
+    new Product('Unicorn Meat', 'unicorn.jpg'),
+    new Product('Wine Glass', 'wine-glass.jpg')
   );
   
   renderProducts();
