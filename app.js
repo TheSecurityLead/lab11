@@ -18,6 +18,12 @@ function getRandomProduct() {
   return Math.floor(Math.random() * Product.allProducts.length);
 }
 
+function showResults() {
+  
+  document.getElementById('results').hidden = false;
+
+  renderChart();
+}
 
 function renderProducts() {
   let displayedIndices = [];
@@ -73,6 +79,42 @@ function showResults() {
   resultsList.appendChild(ul);
 }
 
+function renderChart() {
+  const context = document.getElementById('results-chart').getContext('2d');
+  const names = Product.allProducts.map(product => product.name);
+  const votes = Product.allProducts.map(product => product.timesClicked);
+  const views = Product.allProducts.map(product => product.timesShown);
+
+  new Chart(context, {
+    type: 'bar',
+    data: {
+      labels: names,
+      datasets: [{
+        label: 'Votes',
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1,
+        data: votes
+      },
+      {
+        label: 'Views',
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1,
+        data: views
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+}
 
 function initializeProducts() {
   new Product('R2D2 Bag', 'bag.jpg');
