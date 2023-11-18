@@ -1,1 +1,1 @@
-(!Labscore)[labscore1.png]
+![Labscore](labscore1.png)
