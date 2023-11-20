@@ -67,8 +67,11 @@ function handleClick(event) {
 }
 
 // Function to show results
-function showResults() {
-  // ... same as before ...
+function showResultsButton() {
+  let button = document.createElement('button');
+  button.textContent = 'View Results';
+  button.addEventListener('click', displayResults);
+  document.body.appendChild(button);
 }
 
 // Function to save the current state to local storage
